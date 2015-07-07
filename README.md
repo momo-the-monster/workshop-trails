@@ -1,3 +1,6 @@
 # workshop-trails
 Project for my Unity Creative Coding Workshop
-Download Executable for PC / Mac
+
+Scenes are in Assets/Workshop/Scenes
+
+Executable downloads coming soon
