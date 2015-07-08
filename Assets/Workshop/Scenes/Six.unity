@@ -183,7 +183,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 149550811}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7fceaeb339b971b429c4cc600acabd13, type: 3}
   m_Name: 
@@ -193,7 +193,7 @@ MonoBehaviour:
   hdr: 0
   sepBlurSpread: 8.47999954
   quality: 1
-  bloomIntensity: 3.63000011
+  bloomIntensity: .819999993
   bloomThreshold: .419999987
   bloomThresholdColor: {r: 1, g: 1, b: 1, a: 1}
   bloomBlurIterations: 2
@@ -201,7 +201,7 @@ MonoBehaviour:
   flareRotation: 0
   lensflareMode: 0
   hollyStretchWidth: 1.61000001
-  lensflareIntensity: .400000006
+  lensflareIntensity: 7.46999979
   lensflareThreshold: 0
   lensFlareSaturation: .529999971
   flareColorA: {r: .400000006, g: .400000006, b: .800000012, a: .75}
@@ -228,6 +228,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SCShader: {fileID: 4800000, guid: 7fe2d09a0b14ad34082fa52f5ea20388, type: 3}
   bypass: 0
+  blendMode: 0
 --- !u!4 &216749479
 Transform:
   m_PrefabParentObject: {fileID: 438116, guid: 9624f7d2eee60a2499e0b87db420cde7, type: 2}

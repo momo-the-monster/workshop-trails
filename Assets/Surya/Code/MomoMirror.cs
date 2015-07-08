@@ -7,7 +7,14 @@ public class MomoMirror : MonoBehaviour {
 	public Shader SCShader;
 	private Material SCMaterial;
     public bool bypass = false;
+    public BlendModes blendMode;
+    private BlendModes deltaBlendMode;
 	#endregion
+
+    public enum BlendModes
+    {
+        FullA, FullB, Screen, Average, ColorMax, ColorMin, Difference, Inverted
+    }
 	
 	#region Properties
 	Material material
@@ -36,6 +43,8 @@ public class MomoMirror : MonoBehaviour {
 	
 	void OnRenderImage (RenderTexture sourceTexture, RenderTexture destTexture)
 	{
+        material.SetFloat("blendMode", (int)blendMode);
+
 		if(SCShader != null && !bypass)
 		{
 			Graphics.Blit(sourceTexture, destTexture, material);
@@ -48,7 +57,7 @@ public class MomoMirror : MonoBehaviour {
 		
 	}
 	
-	// Update is called once per frame
+	[ExecuteInEditMode]
 	void Update () 
 	{
 
@@ -58,6 +67,7 @@ public class MomoMirror : MonoBehaviour {
 			SCShader = Shader.Find("Custom/MomoMirror");
 
 		}
+
 		#endif
 
         if (Input.GetKeyDown(KeyCode.M))

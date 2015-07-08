@@ -17,6 +17,7 @@
 			
 			
 			uniform sampler2D _MainTex;
+			uniform int blendMode;
 			
 		       struct appdata_t
             {
@@ -38,7 +39,6 @@
                 OUT.vertex = mul(UNITY_MATRIX_MVP, IN.vertex);
                 OUT.texcoord = IN.texcoord;
                 OUT.color = IN.color;
-                
                 return OUT;
             }
 
@@ -47,12 +47,7 @@
 			{
 			 	float2 q 		= i.texcoord.xy;
 
-				bool mirrorHorizontal 	= true;
-				bool mirrorVertical 	= false;
-
-				if(mirrorHorizontal && q.x > 0.5) q = float2(1.0-q.x, q.y); 
-				if(mirrorVertical && q.y > 0.5)	  q = float2(q.x, 1.0-q.y);
-				
+				if(q.x > 0.5) q = float2(1.0-q.x, q.y); 
 				float2 q2 = float2(1.0-q.x, q.y);
 				float4 a = tex2D(_MainTex, q);
 				float4 b = tex2D(_MainTex, q2);
@@ -64,7 +59,26 @@
 				float luminance = (a.r + a.g + a.b) / 3;
 				float4 inverted = 1 - a;
 				float4 colorFocus = luminance <= 0.5 ? a : float4(luminance, luminance, luminance, 1);
-				return screen;
+
+				if(blendMode == 0)
+					return a;
+				if(blendMode == 1)
+					return b;
+				if(blendMode == 2)
+					return screen;
+				if(blendMode == 3)
+					return average;
+				if(blendMode == 4)
+					return colorMax;
+				if(blendMode == 5)
+					return colorMin;
+				if(blendMode == 6)
+					return difference;
+				if(blendMode == 7)
+					return inverted;
+
+				return a;
+
 			}
 			
 			ENDCG
