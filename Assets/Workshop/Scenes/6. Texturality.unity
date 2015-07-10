@@ -242,7 +242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fbe8446fd51be9428ddd636a2232155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerKey: 103
+  triggerKey: 112
   superSize: 3
   subfolder: Workshop
 --- !u!4 &216749479

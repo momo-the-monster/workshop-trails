@@ -193,6 +193,7 @@ GameObject:
   - 81: {fileID: 149550812}
   - 114: {fileID: 149550817}
   - 114: {fileID: 149550820}
+  - 114: {fileID: 149550818}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -303,6 +304,20 @@ MonoBehaviour:
   blurAndFlaresShader: {fileID: 4800000, guid: be6e39cf196f146d5be72fbefb18ed75, type: 3}
   brightPassFilterShader: {fileID: 4800000, guid: 0aeaa4cb29f5d4e9c8455f04c8575c8c,
     type: 3}
+--- !u!114 &149550818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 149550811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fbe8446fd51be9428ddd636a2232155, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerKey: 112
+  superSize: 3
+  subfolder: Workshop
 --- !u!114 &149550820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -797,6 +812,10 @@ Prefab:
     - target: {fileID: 22470090, guid: 134baa4997b93004791c6415e1c854ab, type: 2}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11411700, guid: 134baa4997b93004791c6415e1c854ab, type: 2}
+      propertyPath: m_Text
+      value: 'P: Save Picture'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 134baa4997b93004791c6415e1c854ab, type: 2}
