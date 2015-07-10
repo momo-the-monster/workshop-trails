@@ -6,14 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Workshop/Scenes/One.unity
+    path: Assets/Workshop/Scenes/1. Whitesnake.unity
   - enabled: 1
-    path: Assets/Workshop/Scenes/Two.unity
+    path: Assets/Workshop/Scenes/2. Light Cycle.unity
   - enabled: 1
-    path: Assets/Workshop/Scenes/Three.unity
+    path: Assets/Workshop/Scenes/3. Enter The Mirror.unity
   - enabled: 1
-    path: Assets/Workshop/Scenes/Four.unity
+    path: Assets/Workshop/Scenes/4. The Camera Follows.unity
   - enabled: 1
-    path: Assets/Workshop/Scenes/Five.unity
+    path: Assets/Workshop/Scenes/5. A Simplification.unity
   - enabled: 1
-    path: Assets/Workshop/Scenes/Six.unity
+    path: Assets/Workshop/Scenes/6. Texturality.unity

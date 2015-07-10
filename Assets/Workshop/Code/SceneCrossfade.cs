@@ -29,13 +29,13 @@ public class SceneCrossfade : MonoBehaviour
             EndScene();
 
         // Trigger EndScene with a Keyboard Shortcut
-        if (Input.GetKeyDown(KeyCode.Plus) || Input.GetKeyDown(KeyCode.Equals))
+        if (Input.GetKeyDown(KeyCode.Equals))
         {
             sceneToLoad = GetNextScene();
             sceneEnding = true;
         }
 
-        if (Input.GetKeyDown(KeyCode.Minus) || Input.GetKeyDown(KeyCode.Underscore))
+        if (Input.GetKeyDown(KeyCode.Minus))
         {
             sceneToLoad = GetPreviousScene();
             sceneEnding = true;
