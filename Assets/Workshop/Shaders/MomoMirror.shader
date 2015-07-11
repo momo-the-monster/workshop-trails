@@ -45,7 +45,7 @@
 
 			float4 frag (v2f i) : COLOR
 			{
-			 	float2 q 		= i.texcoord.xy;
+			 	float2 q = i.texcoord.xy;
 
 				if(q.x > 0.5) q = float2(1.0-q.x, q.y); 
 				float2 q2 = float2(1.0-q.x, q.y);
@@ -59,7 +59,7 @@
 				float luminance = (a.r + a.g + a.b) / 3;
 				float4 inverted = 1 - a;
 				float4 colorFocus = luminance <= 0.5 ? a : float4(luminance, luminance, luminance, 1);
-
+				
 				if(blendMode == 0)
 					return a;
 				if(blendMode == 1)
@@ -76,7 +76,7 @@
 					return difference;
 				if(blendMode == 7)
 					return inverted;
-
+					
 				return a;
 
 			}
