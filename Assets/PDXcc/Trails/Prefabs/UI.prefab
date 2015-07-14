@@ -44,8 +44,6 @@ GameObject:
   - 224: {fileID: 22483222}
   - 222: {fileID: 22273482}
   - 114: {fileID: 11424616}
-  - 114: {fileID: 11441768}
-  - 114: {fileID: 11403716}
   m_Layer: 5
   m_Name: Curtain
   m_TagString: Untagged
@@ -116,6 +114,7 @@ GameObject:
   - 224: {fileID: 22443038}
   - 222: {fileID: 22213020}
   - 114: {fileID: 11494596}
+  - 114: {fileID: 11409674}
   m_Layer: 0
   m_Name: Blend Mode
   m_TagString: Untagged
@@ -140,15 +139,15 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &11403716
+--- !u!114 &11409674
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 128698}
+  m_GameObject: {fileID: 182958}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e0495bebd20a7c4fabe97e6661885ea, type: 3}
+  m_Script: {fileID: 11500000, guid: d4636cb1dddeede49a1929372dde64dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &11411700
@@ -230,21 +229,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b084395420f3ff478518156e7412f6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: -360
+  trigger: 32
   speed: .25
---- !u!114 &11441768
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 128698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb07f7620af6b784c8129e3f5467a0fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fadeSpeed: 10
-  curtain: {fileID: 11424616}
 --- !u!114 &11476656
 MonoBehaviour:
   m_ObjectHideFlags: 1
