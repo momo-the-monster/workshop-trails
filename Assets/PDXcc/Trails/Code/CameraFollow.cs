@@ -5,21 +5,19 @@ namespace pdxcc
 {
     public class CameraFollow : MonoBehaviour
     {
-
-        public GameObject target;
+        // Target for the camera to follow
+        public Transform target;
+        // Distance to maintain between camera and target
         public Vector3 offset;
+        // How quickly to follow
         public float speed = 1f;
 
-        void Start()
-        {
-
-        }
-
         void Update()
-        {
-            Vector3 targetPosition = target.transform.position + offset;
+        {   
+            // Get the position of the target, add the offset
+            Vector3 targetPosition = target.position + offset;
+            // Lerp between the current position and the target position using deltaTime for consistency
             transform.position = Vector3.Lerp(transform.position, targetPosition, speed * Time.deltaTime);
         }
     }
-
 }
