@@ -4,7 +4,7 @@ using UnityEngine.UI;
     
 namespace pdxcc {
 
-    [RequireComponent(typeof(Text)]
+    [RequireComponent(typeof(Text))]
     public class SetLabelFromBlendmode : MonoBehaviour {
 
         internal Text field;
