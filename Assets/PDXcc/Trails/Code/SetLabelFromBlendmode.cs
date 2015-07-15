@@ -2,9 +2,9 @@
 using System.Collections;
 using UnityEngine.UI;
     
-//[RequireComponent(typeof(Text)]
 namespace pdxcc {
 
+    [RequireComponent(typeof(Text)]
     public class SetLabelFromBlendmode : MonoBehaviour {
 
         internal Text field;
