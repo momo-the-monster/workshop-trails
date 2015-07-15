@@ -8,7 +8,6 @@ using System.Collections;
 
 namespace pdxcc
 {
-
     public class SimpleGrab : MonoBehaviour
     {
         // Trigger a Capture with this key
