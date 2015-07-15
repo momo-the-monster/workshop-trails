@@ -21,7 +21,7 @@ namespace pdxcc
         // Create directory on startup (does nothing if it already exists)
         void Start()
         {
-            System.IO.DirectoryInfo info = System.IO.Directory.CreateDirectory(GetScreenshotDirectory());
+            System.IO.Directory.CreateDirectory(GetScreenshotDirectory());
         }
 
         // Trigger screenshot on keypress
