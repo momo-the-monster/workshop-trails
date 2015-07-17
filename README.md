@@ -1,5 +1,4 @@
-# MMM Trails
-# Intro to Creative Coding in Unity
+## MMM Trails - Intro to Creative Coding in Unity
 ![Picture](http://zippy.gfycat.com/WaryDisastrousGalapagospenguin.gif)
 
 Check out the Scenes in Assets/MMM/Trails/Scenes
