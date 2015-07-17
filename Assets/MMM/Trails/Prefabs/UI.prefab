@@ -62,6 +62,7 @@ GameObject:
   - 223: {fileID: 22307324}
   - 114: {fileID: 11428876}
   - 114: {fileID: 11499986}
+  - 114: {fileID: 11490198}
   m_Layer: 0
   m_Name: UI
   m_TagString: Untagged
@@ -294,6 +295,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d685198df43dba48ac52ad763af62b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11490198
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 141232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92556c0bbf9be5d41988f5e02496d2b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keyNext: 61
+  keyPrevious: 45
 --- !u!114 &11494596
 MonoBehaviour:
   m_ObjectHideFlags: 1

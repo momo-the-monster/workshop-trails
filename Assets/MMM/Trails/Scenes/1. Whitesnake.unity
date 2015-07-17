@@ -594,7 +594,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b084395420f3ff478518156e7412f6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: -360
+  trigger: 32
   speed: .25
 --- !u!1 &1471987927
 GameObject:
@@ -763,7 +763,6 @@ GameObject:
   - 224: {fileID: 2094378844}
   - 222: {fileID: 2094378848}
   - 114: {fileID: 2094378847}
-  - 114: {fileID: 2094378846}
   - 114: {fileID: 2094378845}
   m_Layer: 5
   m_Name: Curtain
@@ -793,29 +792,15 @@ RectTransform:
 --- !u!114 &2094378845
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11403716, guid: 134baa4997b93004791c6415e1c854ab,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2094378843}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e0495bebd20a7c4fabe97e6661885ea, type: 3}
+  m_Script: {fileID: 11500000, guid: 92556c0bbf9be5d41988f5e02496d2b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2094378846
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11441768, guid: 134baa4997b93004791c6415e1c854ab,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2094378843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb07f7620af6b784c8129e3f5467a0fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fadeSpeed: 10
-  curtain: {fileID: 2094378847}
+  triggerKey: 61
 --- !u!114 &2094378847
 MonoBehaviour:
   m_ObjectHideFlags: 0

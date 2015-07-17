@@ -813,10 +813,6 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 11411700, guid: 134baa4997b93004791c6415e1c854ab, type: 2}
-      propertyPath: m_Text
-      value: 'P: Save Picture'
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 134baa4997b93004791c6415e1c854ab, type: 2}
   m_IsPrefabParent: 0

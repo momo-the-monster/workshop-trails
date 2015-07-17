@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Unlit
-  m_Shader: {fileID: 203, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: 9a5b59439e8c53d4e9239ea69d21748d, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
@@ -18,7 +18,7 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: 24c14abb8d72caf48a56a68f9e0ce413, type: 3}
+          m_Texture: {fileID: 2800000, guid: 93415dc3da2b33443a2d6cdb553cc1c3, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -146,7 +146,7 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: .367647052, g: .211713985, b: .091911763, a: 1}
+        second: {r: .345588207, g: .2780478, b: .226156995, a: 1}
       data:
         first:
           name: _EmissionColorUI
@@ -154,4 +154,4 @@ Material:
       data:
         first:
           name: _TintColor
-        second: {r: .257352948, g: .182522222, b: .141922578, a: .501960814}
+        second: {r: .257352948, g: .182522222, b: .141922578, a: 1}

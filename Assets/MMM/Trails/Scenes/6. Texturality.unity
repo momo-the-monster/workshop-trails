@@ -820,7 +820,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92556c0bbf9be5d41988f5e02496d2b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerKey: 61
+  keyNext: 61
+  keyPrevious: 45
 --- !u!114 &941726148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1004,6 +1005,72 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 438116, guid: 9624f7d2eee60a2499e0b87db420cde7, type: 2}
   m_PrefabInternal: {fileID: 1679757769}
+--- !u!1 &1398539223
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1398539224}
+  - 222: {fileID: 1398539226}
+  - 114: {fileID: 1398539225}
+  m_Layer: 0
+  m_Name: License
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1398539224
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1398539223}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1487544264}
+  m_RootOrder: 6
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -92.6999969, y: 7.80000019}
+  m_SizeDelta: {x: 167.800003, y: 15.6000004}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &1398539225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1398539223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 8
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 2
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: Photo CC-BY-SA Luca Galuzzi
+--- !u!222 &1398539226
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1398539223}
 --- !u!1 &1423535244
 GameObject:
   m_ObjectHideFlags: 0
@@ -1179,6 +1246,7 @@ RectTransform:
   - {fileID: 1785739162}
   - {fileID: 791851531}
   - {fileID: 661570573}
+  - {fileID: 1398539224}
   m_Father: {fileID: 856500149}
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
