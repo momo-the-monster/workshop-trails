@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace pdxcc
+namespace mmm
 {
     public class MoveXY : MonoBehaviour
     {

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace pdxcc {
+namespace mmm {
     
     [RequireComponent(typeof(UnityEngine.UI.Text))]
     public class SetLabelFromSceneName : MonoBehaviour {

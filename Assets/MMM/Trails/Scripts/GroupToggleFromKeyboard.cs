@@ -3,16 +3,24 @@ using System.Collections;
 using UnityEngine.UI;
 using DG.Tweening;
 
-namespace pdxcc
+/*
+ * Fades a CanvasGroup Element In and Out via Keyboard Command
+ */
+
+namespace mmm
 {
+    [RequireComponent(typeof(CanvasGroup))]
     public class GroupToggleFromKeyboard : MonoBehaviour
     {
-
+        // Inspectable Properties
         public KeyCode trigger = KeyCode.Space;
         public float speed = 1f;
+
+        // Internal Properties
         bool value = true;
         CanvasGroup group;
 
+        // Cache CanvasGroup on Start
         void Start()
         {
             group = GetComponent<CanvasGroup>();

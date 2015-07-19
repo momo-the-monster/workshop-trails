@@ -1,7 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace pdxcc
+/*
+ * Smooth Camera Following
+ */
+
+namespace mmm
 {
     public class CameraFollow : MonoBehaviour
     {
@@ -13,6 +17,16 @@ namespace pdxcc
 
         // How quickly to follow
         public float speed = 1f;
+
+        // Get offset from current position
+        public bool useCurrentOffset = true;
+
+        void Awake()
+        {
+            // Keep the current position of the camera in relation to the target
+            if(useCurrentOffset)
+                offset = transform.position - target.position;
+        }
 
         void Update()
         {   

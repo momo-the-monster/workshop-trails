@@ -6,7 +6,7 @@ using System.Collections;
  * Change the subfolder property to pick a different subfolder
  */
 
-namespace pdxcc
+namespace mmm
 {
     public class SimpleGrab : MonoBehaviour
     {

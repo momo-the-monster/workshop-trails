@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
     
-namespace pdxcc {
+namespace mmm {
 
     [RequireComponent(typeof(Text))]
     public class SetLabelFromBlendmode : MonoBehaviour {
