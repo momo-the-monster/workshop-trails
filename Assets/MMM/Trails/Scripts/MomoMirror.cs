@@ -6,6 +6,7 @@ namespace mmm
 {
 
     [ExecuteInEditMode]
+    [RequireComponent(typeof(Camera))]
     public class MomoMirror : MonoBehaviour
     {
         #region Variables
