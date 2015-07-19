@@ -6,6 +6,7 @@
 
 namespace mmm
 {
+    [ExecuteInEditMode]
     public class FillScreen : MonoBehaviour
     {
         // Change for non-square textures
