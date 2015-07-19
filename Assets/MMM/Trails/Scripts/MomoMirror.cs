@@ -1,23 +1,23 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityStandardAssets.ImageEffects;
 
 namespace mmm
 {
 
     [ExecuteInEditMode]
     [RequireComponent(typeof(Camera))]
-    public class MomoMirror : MonoBehaviour
+    public class MomoMirror : PostEffectsBase
     {
-        #region Variables
-        public Shader SCShader;
-        private Material SCMaterial;
+        public Shader mirrorShader = null;
+        private Material mirrorMaterial = null;
+
         public bool bypass = false;
+        public KeyCode triggerNext = KeyCode.RightBracket;
+        public KeyCode triggerPrevious = KeyCode.LeftBracket;
         public BlendModes blendMode;
         private BlendModes deltaBlendMode;
-        public UnityEngine.UI.Text label;
         internal int blendModesCount;
-        #endregion
 
         public enum BlendModes
         {
@@ -29,58 +29,42 @@ namespace mmm
         public static event SwitchAction OnSwitched;
         #endregion
 
-        #region Properties
-        Material material
+        public override bool CheckResources()
         {
-            get
-            {
-                if (SCMaterial == null)
-                {
-                    SCMaterial = new Material(SCShader);
-                    SCMaterial.hideFlags = HideFlags.HideAndDontSave;
-                }
-                return SCMaterial;
-            }
-        }
-        #endregion
-        void Start()
-        {
-            SCShader = Shader.Find("Custom/MomoMirror");
+            CheckSupport(false);
 
-            if (!SystemInfo.supportsImageEffects)
+            mirrorMaterial = CheckShaderAndCreateMaterial(mirrorShader, mirrorMaterial);
+
+            if (!isSupported)
+                ReportAutoDisable();
+            return isSupported;
+        }
+        
+        void Awake()
+        {
+            blendModesCount = System.Enum.GetValues(typeof(BlendModes)).Length;
+        }
+
+        void OnRenderImage(RenderTexture source, RenderTexture destination)
+        {
+            if (CheckResources() == false)
             {
-                enabled = false;
+                Graphics.Blit(source, destination);
                 return;
             }
 
-            UpdateLabel();
-
-            blendModesCount = System.Enum.GetValues(typeof(BlendModes)).Length;
-
-        }
-
-        void OnRenderImage(RenderTexture sourceTexture, RenderTexture destTexture)
-        {
-            if (SCShader != null && !bypass)
+            if (mirrorShader != null && !bypass)
             {
-                Graphics.Blit(sourceTexture, destTexture, material);
+                Graphics.Blit(source, destination, mirrorMaterial);
             }
             else
             {
-                Graphics.Blit(sourceTexture, destTexture);
+                Graphics.Blit(source, destination);
             }
         }
 
         void Update()
         {
-
-#if UNITY_EDITOR
-            if (Application.isPlaying != true)
-            {
-                SCShader = Shader.Find("Custom/MomoMirror");
-            }
-
-#endif
 
             if (Input.GetKeyDown(KeyCode.M))
             {
@@ -111,8 +95,7 @@ namespace mmm
 
             if (deltaBlendMode != blendMode)
             {
-                material.SetFloat("blendMode", (int)blendMode);
-                UpdateLabel();
+                mirrorMaterial.SetFloat("blendMode", (int)blendMode);
             }
             deltaBlendMode = blendMode;
 
@@ -124,19 +107,11 @@ namespace mmm
                 OnSwitched(b);
         }
 
-        void UpdateLabel()
-        {
-            if (label != null)
-            {
-                label.text = "Blend: " + blendMode.ToString();
-            }
-        }
-
         void OnDisable()
         {
-            if (SCMaterial)
+            if (mirrorMaterial)
             {
-                DestroyImmediate(SCMaterial);
+                DestroyImmediate(mirrorMaterial);
             }
 
         }

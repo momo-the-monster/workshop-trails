@@ -146,9 +146,9 @@ GameObject:
   - 124: {fileID: 149550813}
   - 81: {fileID: 149550812}
   - 114: {fileID: 149550817}
-  - 114: {fileID: 149550818}
   - 114: {fileID: 149550820}
   - 114: {fileID: 149550819}
+  - 114: {fileID: 149550818}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -195,7 +195,7 @@ Camera:
     height: 1
   near clip plane: .300000012
   far clip plane: 1000
-  field of view: 60
+  field of view: 26
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -270,10 +270,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ad75ed9bf526344a02bac2a0d1631e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SCShader: {fileID: 4800000, guid: 7fe2d09a0b14ad34082fa52f5ea20388, type: 3}
+  mirrorShader: {fileID: 4800000, guid: 7fe2d09a0b14ad34082fa52f5ea20388, type: 3}
   bypass: 0
+  triggerNext: 93
+  triggerPrevious: 91
   blendMode: 0
-  label: {fileID: 941726148}
 --- !u!114 &149550819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -302,6 +303,7 @@ MonoBehaviour:
   target: {fileID: 480988683}
   offset: {x: 0, y: 0, z: -75}
   speed: 1
+  useCurrentOffset: 1
 --- !u!1 &274258591
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,12 +552,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 134baa4997b93004791c6415e1c854ab, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &941726148
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11494596, guid: 134baa4997b93004791c6415e1c854ab,
-    type: 2}
-  m_PrefabInternal: {fileID: 941726147}
-  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!4 &1015621389
 Transform:
   m_PrefabParentObject: {fileID: 438116, guid: 9624f7d2eee60a2499e0b87db420cde7, type: 2}

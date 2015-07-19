@@ -1,11 +1,11 @@
 fileFormatVersion: 2
 guid: 51ad75ed9bf526344a02bac2a0d1631e
-timeCreated: 1435103838
+timeCreated: 1437342457
 licenseType: Pro
 MonoImporter:
   serializedVersion: 2
   defaultReferences:
-  - SCShader: {fileID: 4800000, guid: 7fe2d09a0b14ad34082fa52f5ea20388, type: 3}
+  - mirrorShader: {fileID: 4800000, guid: 7fe2d09a0b14ad34082fa52f5ea20388, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

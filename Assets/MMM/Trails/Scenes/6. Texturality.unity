@@ -296,10 +296,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51ad75ed9bf526344a02bac2a0d1631e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SCShader: {fileID: 4800000, guid: 7fe2d09a0b14ad34082fa52f5ea20388, type: 3}
+  mirrorShader: {fileID: 4800000, guid: 7fe2d09a0b14ad34082fa52f5ea20388, type: 3}
   bypass: 0
+  triggerNext: 93
+  triggerPrevious: 91
   blendMode: 0
-  label: {fileID: 941726148}
 --- !u!114 &149550819
 MonoBehaviour:
   m_ObjectHideFlags: 0
