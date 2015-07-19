@@ -1,6 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/**
+ * Move the Transform of this object in X and Y
+ * Via Keyboard Commands
+ */
 namespace mmm
 {
     public class MoveXY : MonoBehaviour
@@ -9,19 +13,12 @@ namespace mmm
         public float speed = 100;
         public Vector3 velocity = Vector3.zero;
 
-        // Input Keys
+        // Input Keys - easy to switch via Inspector
         public KeyCode KeyUp = KeyCode.W;
         public KeyCode KeyDown = KeyCode.S;
         public KeyCode KeyLeft = KeyCode.A;
         public KeyCode KeyRight = KeyCode.D;
 
-        // Use this for initialization
-        void Start()
-        {
-
-        }
-
-        // Update is called once per frame
         void Update()
         {
 
@@ -30,7 +27,6 @@ namespace mmm
                 velocity.y = speed;
             else if (Input.GetKeyDown(KeyDown))
                 velocity.y = -speed;
-            // Set X Velocity
             else if (Input.GetKeyDown(KeyLeft))
                 velocity.x = -speed;
             else if (Input.GetKeyDown(KeyRight))
