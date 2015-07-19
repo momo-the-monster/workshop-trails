@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/*
+ * Set Text value from Scene on Load
+ */
 namespace mmm {
     
     [RequireComponent(typeof(UnityEngine.UI.Text))]
