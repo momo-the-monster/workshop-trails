@@ -14,14 +14,15 @@ namespace mmm {
         internal Text field;
 
         // Add and Remove the Event Listener
-        void OnEnable()  { MomoMirror.OnSwitched += OnSwitched; }
-        void OnDisable() { MomoMirror.OnSwitched -= OnSwitched; }
+        void OnEnable()  { Symmetry.OnSwitched += OnSwitched; }
+        void OnDisable() { Symmetry.OnSwitched -= OnSwitched; }
 
         // Cache the Text Component
         void Start() { field = GetComponent<Text>(); }
 
         // Set Text on Event Trigger
-	    void OnSwitched ( MomoMirror.BlendModes b ) {
+        void OnSwitched(Symmetry.BlendModes b)
+        {
             field.text = "Blend: " + b.ToString();
         }
     }

@@ -7,10 +7,10 @@ namespace mmm
 
     [ExecuteInEditMode]
     [RequireComponent(typeof(Camera))]
-    public class MomoMirror : PostEffectsBase
+    public class Symmetry : PostEffectsBase
     {
-        public Shader mirrorShader = null;
-        private Material mirrorMaterial = null;
+        public Shader shader = null;
+        private Material material = null;
 
         public bool bypass = false;
         public KeyCode triggerNext = KeyCode.RightBracket;
@@ -33,7 +33,7 @@ namespace mmm
         {
             CheckSupport(false);
 
-            mirrorMaterial = CheckShaderAndCreateMaterial(mirrorShader, mirrorMaterial);
+            material = CheckShaderAndCreateMaterial(shader, material);
 
             if (!isSupported)
                 ReportAutoDisable();
@@ -53,9 +53,9 @@ namespace mmm
                 return;
             }
 
-            if (mirrorShader != null && !bypass)
+            if (shader != null && !bypass)
             {
-                Graphics.Blit(source, destination, mirrorMaterial);
+                Graphics.Blit(source, destination, material);
             }
             else
             {
@@ -95,7 +95,7 @@ namespace mmm
 
             if (deltaBlendMode != blendMode)
             {
-                mirrorMaterial.SetFloat("blendMode", (int)blendMode);
+                material.SetFloat("blendMode", (int)blendMode);
             }
             deltaBlendMode = blendMode;
 
@@ -109,9 +109,9 @@ namespace mmm
 
         void OnDisable()
         {
-            if (mirrorMaterial)
+            if (material)
             {
-                DestroyImmediate(mirrorMaterial);
+                DestroyImmediate(material);
             }
 
         }

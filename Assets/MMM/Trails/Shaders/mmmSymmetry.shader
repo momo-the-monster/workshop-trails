@@ -1,4 +1,4 @@
-﻿Shader "Custom/MomoMirror" {
+﻿Shader "mmm/Symmetry" {
 	Properties 
 	{
 		_MainTex ("Base (RGB)", 2D) = "white" {}

@@ -292,12 +292,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 149550811}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51ad75ed9bf526344a02bac2a0d1631e, type: 3}
+  m_Script: {fileID: 11500000, guid: def8cbf5800847a47937e657561c2826, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mirrorShader: {fileID: 4800000, guid: 7fe2d09a0b14ad34082fa52f5ea20388, type: 3}
+  shader: {fileID: 0}
   bypass: 0
   triggerNext: 93
   triggerPrevious: 91
