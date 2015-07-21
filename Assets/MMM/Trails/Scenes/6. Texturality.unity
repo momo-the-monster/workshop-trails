@@ -292,12 +292,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 149550811}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: def8cbf5800847a47937e657561c2826, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shader: {fileID: 0}
+  shader: {fileID: 4800000, guid: 0fef04b2fcf69454a932f248fcb956a3, type: 3}
   bypass: 0
   triggerNext: 93
   triggerPrevious: 91
@@ -314,7 +314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggerKey: 112
-  superSize: 5
+  superSize: 3
   subfolder: Workshop
 --- !u!4 &216749479 stripped
 Transform:
