@@ -35,7 +35,7 @@ namespace mmm {
                 nextLevel--;
                 if (nextLevel < 0)
                 {
-                    nextLevel = Application.levelCount;
+                    nextLevel = Application.levelCount - 1;
                 }
                 Application.LoadLevel(nextLevel);
             }
