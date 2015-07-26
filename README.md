@@ -39,3 +39,4 @@ The *Mesh Renderers* for the brush heads have been turned off so we see only the
 
 >**Adding a Background Image**
 A textured Quad is attached to the Camera to round out the look of our scene (photograph is Creative Commons CC-BY-SA Luca Galuzzi, please keep attribution if you use it). The *Fill Screen* script on the quad keeps the background filling the view of the camera, which has been switch to Orthographic view for this scene.
+<p style="page-break-after:always;"></p>
