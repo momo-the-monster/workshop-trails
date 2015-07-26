@@ -1,5 +1,5 @@
 ## MMM Trails - Intro to Creative Coding in Unity
-![Picture](http://zippy.gfycat.com/WaryDisastrousGalapagospenguin.gif)
+<div style="text-align:center"><img src ="http://zippy.gfycat.com/WaryDisastrousGalapagospenguin.gif" /></div>
 
 ## About:
 This is the finished project for my Intro to Creative Coding in Unity workshop. In the workshop, we write many of these scripts together, line-by-line, to better understand what we're doing. Here the project is ready for dissection, and saved into multiple scenes so you can see the process. I recommend you start by trying out one of the builds so you can play with all the scenes.
