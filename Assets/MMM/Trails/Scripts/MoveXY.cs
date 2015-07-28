@@ -12,6 +12,7 @@ namespace mmm
 
         public float speed = 100;
         public Vector3 velocity = Vector3.zero;
+        public bool moveOnPress = false;
 
         // Input Keys - easy to switch via Inspector
         public KeyCode KeyUp = KeyCode.W;
@@ -38,6 +39,18 @@ namespace mmm
             if ((Input.GetKeyUp(KeyLeft)) || Input.GetKeyUp(KeyRight))
                 velocity.x = 0;
 
+            // Do Random direction if we've opted in to it
+            if(moveOnPress)
+            {
+                DoRandomDirection();
+            }
+
+            // Move Transform with velocity
+            transform.position += (velocity * Time.deltaTime);
+        }
+
+        void DoRandomDirection()
+        {
             // Mouse Handler - Set / Zero Velocities
             if (Input.GetMouseButtonUp(0))
                 velocity = Vector3.zero;
@@ -47,10 +60,8 @@ namespace mmm
                 velocity.x = Random.value > 0.5 ? speed : -speed;
                 velocity.y = Random.value > 0.5 ? speed : -speed;
             }
-
-            // Move Transform with velocity
-            transform.position += (velocity * Time.deltaTime);
         }
+
     }
 
 }
