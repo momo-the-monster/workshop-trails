@@ -1,5 +1,7 @@
 ## MMM Trails - Intro to Creative Coding in Unity
 
+![Picture](http://i.imgur.com/ptoFNcM.jpg)
+
 This is the finished project for my Intro to Creative Coding in Unity workshop. In the workshop, we write many of these scripts together, line-by-line, to better understand what we're doing. Here the project is ready for dissection, and saved into multiple scenes so you can see the process. I recommend you start by trying out one of the builds so you can play with all the scenes.
 
 Downloads: [Windows App](https://github.com/momo-the-monster/workshop-trails/releases/download/v0.8-rc1/workshop-trails-v0.8-rc1-win.zip)
