@@ -2,10 +2,12 @@
 
 ![Picture](http://i.imgur.com/ptoFNcM.jpg)
 
-This is the finished project for my Intro to Creative Coding in Unity workshop. In the workshop, we write many of these scripts together, line-by-line, to better understand what we're doing. Here the project is ready for dissection, and saved into multiple scenes so you can see the process. I recommend you start by trying out one of the builds so you can play with all the scenes.
+This is the finished project for my Intro to Creative Coding in Unity workshop. In the workshop, we explore many of these scripts together, line-by-line, to better understand what we're doing. Here the project is ready for dissection, and saved into multiple scenes so you can see the process. I recommend you start by trying out one of the builds so you can play with all the scenes.
 
-Downloads: [Windows App](https://github.com/momo-the-monster/workshop-trails/releases/download/v0.8-rc1/workshop-trails-v0.8-rc1-win.zip)
- / [Mac App](https://github.com/momo-the-monster/workshop-trails/releases/download/v0.8-rc1/workshop-trails-v0.8-rc1-osx.zip)
+[This Google Doc](https://docs.google.com/document/d/1PFHpDHGMTXW40saqPOPe3QG4Guwzn2uvzkhS7Irt9aI) May be handy for following along with the workshop.
+
+Downloads: [Windows App](https://github.com/momo-the-monster/workshop-trails/releases/download/1.0/workshop-trails-v1.0-win.zip)
+ / [Mac App](https://github.com/momo-the-monster/workshop-trails/releases/download/1.0/workshop-trails-v1.0-mac.zip)
 
 Then open the project in Unity and check out the Scenes in Assets/MMM/Trails/Scenes. I include some information about each scene below.
 
