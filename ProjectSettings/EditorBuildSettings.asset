@@ -6,14 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/MMM/Trails/Scenes/1. Whitesnake.unity
+    path: Assets/_Project/Scenes/1. Whitesnake.unity
+    guid: 6c491acdab574f4449d85602c9ad1769
   - enabled: 1
-    path: Assets/MMM/Trails/Scenes/2. Light Cycle.unity
+    path: Assets/_Project/Scenes/2. Light Cycle.unity
+    guid: 98b41907b99b4c1448b7b2cfe7135d58
   - enabled: 1
-    path: Assets/MMM/Trails/Scenes/3. Enter The Mirror.unity
+    path: Assets/_Project/Scenes/3. Enter The Mirror.unity
+    guid: e833145884cdee44fa280f9f083dbda1
   - enabled: 1
-    path: Assets/MMM/Trails/Scenes/4. The Camera Follows.unity
+    path: Assets/_Project/Scenes/4. The Camera Follows.unity
+    guid: a0add70e58f7c5c428c9e65a3f4c1422
   - enabled: 1
-    path: Assets/MMM/Trails/Scenes/5. A Simplification.unity
+    path: Assets/_Project/Scenes/5. The Cinemachine Follows.unity
+    guid: b3b3ec43d74830147a7e7aa938d4ada8
   - enabled: 1
-    path: Assets/MMM/Trails/Scenes/6. Texturality.unity
+    path: Assets/_Project/Scenes/6. Texturality.unity
+    guid: 70db5e0e18c2dbb45b8c80a275ffbecf

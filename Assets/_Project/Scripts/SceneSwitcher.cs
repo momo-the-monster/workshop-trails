@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using UnityEngine.SceneManagement;
 
 /**
  * Use Keyboard to switch between all scenes in build
@@ -19,25 +19,25 @@ namespace mmm {
             if (Input.GetKeyDown(keyNext))
             {
                 // Increment Scene
-                int nextLevel = Application.loadedLevel;
+                int nextLevel = SceneManager.GetActiveScene().buildIndex;
                 nextLevel++;
-                if (nextLevel >= Application.levelCount)
+                if (nextLevel >= SceneManager.sceneCountInBuildSettings)
                 {
                     nextLevel = 0;
                 }
-                Application.LoadLevel(nextLevel);
+                SceneManager.LoadScene(nextLevel);
             }
 
             if (Input.GetKeyDown(keyPrevious))
             {
                 // Decrement Scene
-                int nextLevel = Application.loadedLevel;
+                int nextLevel = SceneManager.GetActiveScene().buildIndex;
                 nextLevel--;
                 if (nextLevel < 0)
                 {
-                    nextLevel = Application.levelCount - 1;
+                    nextLevel = SceneManager.sceneCountInBuildSettings - 1;
                 }
-                Application.LoadLevel(nextLevel);
+                SceneManager.LoadScene(nextLevel);
             }
 
 	    }
