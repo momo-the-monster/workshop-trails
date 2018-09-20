@@ -36,7 +36,7 @@ namespace mmm
         // Capture the screenshot and log the path to the console
         void TakeScreenshot()
         {
-            Application.CaptureScreenshot(GetScreenshotName(), superSize);
+            ScreenCapture.CaptureScreenshot(GetScreenshotName(), superSize);
             Debug.LogFormat("Captured Screenshot to {0}", GetScreenshotName());
         }
 

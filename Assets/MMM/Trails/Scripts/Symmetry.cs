@@ -15,6 +15,7 @@ namespace mmm
         public bool bypass = false;
         public KeyCode triggerNext = KeyCode.RightBracket;
         public KeyCode triggerPrevious = KeyCode.LeftBracket;
+        public KeyCode triggerBypass = KeyCode.B;
         public BlendModes blendMode;
         private BlendModes deltaBlendMode;
         internal int blendModesCount;
@@ -66,12 +67,12 @@ namespace mmm
         void Update()
         {
 
-            if (Input.GetKeyDown(KeyCode.M))
+            if (Input.GetKeyDown(triggerBypass))
             {
                 bypass = !bypass;
             }
 
-            if (Input.GetKeyDown(KeyCode.RightBracket))
+            if (Input.GetKeyDown(triggerNext))
             {
                 int blendModeIndex = (int)blendMode + 1;
                 if (blendModeIndex >= blendModesCount)
@@ -82,7 +83,7 @@ namespace mmm
                 SendBlendmodeChange(blendMode);
             }
 
-            if (Input.GetKeyDown(KeyCode.LeftBracket))
+            if (Input.GetKeyDown(triggerPrevious))
             {
                 int blendModeIndex = (int)blendMode - 1;
                 if (blendModeIndex < 0)

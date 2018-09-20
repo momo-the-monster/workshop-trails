@@ -7,6 +7,7 @@ public class MouseBrush : MonoBehaviour {
 
     public GameObject brushPrefab;
     public int gridSnap = 1;
+
     internal GameObject currentBrush;
     internal Vector3 mousePositionPrevious;
 
@@ -63,9 +64,9 @@ public class MouseBrush : MonoBehaviour {
     // Call a delayed destroy on the brush, unset the currentBrush
     void RemoveBrush(int index)
     {
-        if (this.currentBrush != null)
+        if (currentBrush != null)
         {
-            this.currentBrush.GetComponent<DestroyDelayed>().Trigger(this.currentBrush.GetComponentInChildren<TrailRenderer>().time);
+            currentBrush.GetComponent<DestroyDelayed>().Trigger(this.currentBrush.GetComponentInChildren<TrailRenderer>().time);
         }
         currentBrush = null;
     }
